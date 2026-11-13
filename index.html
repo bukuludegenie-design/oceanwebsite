@@ -1,361 +1,336 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#040404">
-<meta name="description" content="OCEAN — a shop and studio for shoes, fashion outfits and stories. Editorial footwear and apparel, priced and ready to order.">
-<title>OCEAN® — Shoes, Outfits & Stories</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Archivo+Expanded:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#062b3b">
+  <meta name="description" content="OCEAN Media Group connects trade, entertainment and media coverage across South Sudan, East Africa and the world.">
+  <meta name="keywords" content="OCEAN Media Group, trade, entertainment, media coverage, Juba, Kigali, Kampala, Nairobi">
+  <meta property="og:title" content="OCEAN | Trade · Entertainment · Media">
+  <meta property="og:description" content="Stories, culture, commerce and opportunities from East Africa to the world.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://www.youtube-nocookie.com">
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <title>OCEAN | Trade • Entertainment • Media</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="is-loading">
+<body>
 
-<!-- ============ LOADER ============ -->
-<div class="loader" id="loader">
-  <div class="loader__inner">
-    <div class="loader__box" id="loaderBox">
-      <span>O</span><span>C</span><span>E</span><span>A</span><span>N</span>
-    </div>
-    <div class="loader__meta">
-      <span class="loader__title">OCEAN<sup>®</sup></span>
-      <p class="loader__tagline">A shop and studio for shoes, outfits<br>and the stories that move with them.</p>
-    </div>
-    <div class="loader__actions">
-      <button class="btn btn--fill" id="enterAudio" type="button"><span>Enter</span></button>
-      <button class="btn btn--ghost" id="enterSilent" type="button"><span>Enter without audio</span></button>
-    </div>
-  </div>
-  <div class="loader__bar"><i id="loaderBar"></i></div>
+<div class="announcement">
+  <span class="live-dot"></span>
+  OCEAN — connecting people, stories and opportunities
+  <a href="#contact">Work with us ↗</a>
 </div>
 
-<!-- ============ CURSOR ============ -->
-<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
-
-<!-- ============ HEADER ============ -->
-<header class="site-header" id="siteHeader">
-  <a class="brand" href="#top" aria-label="OCEAN home">
-    <span class="brand__mark">OCEAN<sup>®</sup></span>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="OCEAN home">
+    <img src="assets/ocean-logo.png" alt="OCEAN logo">
+    <span>OCEAN<small>TRADE · ENTERTAINMENT · MEDIA</small></span>
   </a>
-  <nav class="site-nav" id="siteNav" aria-label="Primary">
-    <a href="#shop" data-cursor="Shop">Shop</a>
-    <a href="#lookbook" data-cursor="Lookbook">Lookbook</a>
-    <a href="#studio" data-cursor="Studio">Studio</a>
-    <a href="#contact" data-cursor="Contact">Contact</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav id="mainNav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">What we do</a>
+    <a href="#shop">Shop</a>
+    <a href="#updates">Updates</a>
+    <a href="#city-stories">City stories</a>
+    <a href="#artist-news">Artist news</a>
+    <a href="#leadership">Leadership</a>
+    <a class="nav-cta" href="#contact">Contact us ↗</a>
   </nav>
-  <div class="header-tools">
-    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" aria-label="Toggle ambient sound">
-      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      <span class="sound-label" id="soundLabel">Sound off</span>
-    </button>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-label="Open menu"><i></i><i></i></button>
-  </div>
 </header>
 
-<main id="top">
+<main>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="hero">
-    <div class="hero__grain" aria-hidden="true"></div>
-    <div class="hero__top">
-      <span class="eyebrow">Est. 2026 — Juba / Kigali / Worldwide</span>
-      <span class="eyebrow eyebrow--right">Shoes · Outfits · Stories</span>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> IDEAS IN MOTION. STORIES THAT MATTER.</div>
+    <h1>Where bold ideas<br>meet <em>real impact.</em></h1>
+    <p>OCEAN brings trade, entertainment and media coverage together to connect people, elevate stories and create opportunities.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="#services">Explore OCEAN ↗</a>
+      <a class="button button-ghost" href="#contact">Let’s collaborate</a>
     </div>
-    <h1 class="hero__title" aria-label="OCEAN">
-      <span class="hero__word" data-split>OCEAN</span>
-    </h1>
-    <div class="hero__bottom">
-      <p class="hero__lede">Editorial footwear and apparel, priced plainly and ready to order. A shop and studio built on trade, culture and coverage.</p>
-      <div class="hero__cta">
-        <a class="btn btn--fill" href="#shop" data-cursor="Browse"><span>Shop the drop</span></a>
-        <a class="btn btn--ghost" href="#studio" data-cursor="Studio"><span>Our studio</span></a>
-      </div>
-    </div>
-    <div class="hero__scroll"><span>Scroll</span><i></i></div>
-  </section>
-
-  <!-- ============ MARQUEE ============ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__track">
-      <span>Fresh kicks</span><em>✳</em><span>Great value</span><em>✳</em><span>Editorial outfits</span><em>✳</em><span>Order on WhatsApp</span><em>✳</em>
-      <span>Fresh kicks</span><em>✳</em><span>Great value</span><em>✳</em><span>Editorial outfits</span><em>✳</em><span>Order on WhatsApp</span><em>✳</em>
+    <div class="hero-note">
+      <span class="note-line"></span>
+      <span>Curious minds. Creative energy. Connected communities.</span>
     </div>
   </div>
-
-  <!-- ============ SHOP ============ -->
-  <section class="shop" id="shop">
-    <div class="section-head">
-      <div>
-        <span class="kicker">01 / The Shop</span>
-        <h2 class="display">Shoes &amp; <em>outfits.</em></h2>
-      </div>
-      <p class="section-note">Every piece is priced in USD. Tap any item to message Ocean Group on WhatsApp about sizing, availability and delivery.</p>
+  <div class="hero-visual">
+    <div class="visual-glow"></div>
+    <img class="hero-logo" src="assets/ocean-logo.png" alt="OCEAN's wave logo">
+    <div class="floating-card">
+      <span class="card-icon">〰</span>
+      <div><strong>Stories with purpose</strong><small>From the community to the world</small></div>
     </div>
+    <div class="visual-caption">TRADE / CULTURE / STORIES</div>
+  </div>
+  <div class="hero-bottom">
+    <span>01 — WHO WE ARE</span>
+    <span>BUILT AROUND CONNECTION</span>
+    <span>SCROLL TO DISCOVER ↓</span>
+  </div>
+</section>
 
-    <div class="filters" id="filters" role="tablist" aria-label="Filter products">
-      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All <span>12</span></button>
-      <button class="filter" data-filter="shoes" role="tab" aria-selected="false">Shoes <span>7</span></button>
-      <button class="filter" data-filter="outfits" role="tab" aria-selected="false">Outfits <span>5</span></button>
+<section class="intro section" id="about">
+  <div class="section-kicker">01 / ABOUT OCEAN</div>
+  <div class="intro-grid">
+    <h2>More than a name.<br><em>A current of possibility.</em></h2>
+    <div>
+      <p class="large-copy">We believe meaningful progress happens when commerce, culture and communication move together.</p>
+      <p>OCEAN is a growing platform working across trade, entertainment and media coverage. We aim to build relationships, spotlight talent, share useful information and help good ideas reach the people who need them.</p>
+      <a class="text-link" href="#contact">Get to know us ↗</a>
     </div>
+  </div>
+  <div class="values-row">
+    <div><span>01</span><strong>Connection</strong><small>Bringing people and ideas together.</small></div>
+    <div><span>02</span><strong>Creativity</strong><small>Making room for fresh perspectives.</small></div>
+    <div><span>03</span><strong>Integrity</strong><small>Working with care and accountability.</small></div>
+  </div>
+</section>
 
-    <div class="grid" id="grid">
+<section class="services section" id="services">
+  <div class="section-heading">
+    <div><div class="section-kicker">02 / WHAT WE DO</div><h2>Three currents.<br><em>One direction.</em></h2></div>
+    <p>Flexible, people-first services built to bring visibility, value and momentum to your next idea.</p>
+  </div>
+  <div class="service-grid">
+    <article class="service-card service-trade">
+      <div class="service-number">01</div><div class="service-symbol">↗</div>
+      <h3>Trade & Business</h3>
+      <p>Building connections, promoting opportunities and supporting business visibility through clear communication and collaboration.</p>
+      <a href="#contact">Discuss a project ↗</a><div class="service-watermark">TRADE</div>
+    </article>
+    <article class="service-card service-entertainment">
+      <div class="service-number">02</div><div class="service-symbol">✳</div>
+      <h3>Entertainment</h3>
+      <p>Celebrating talent, events and culture with creative promotion that helps people discover what is happening.</p>
+      <a href="#contact">Promote an event ↗</a><div class="service-watermark">CULTURE</div>
+    </article>
+    <article class="service-card service-media">
+      <div class="service-number">03</div><div class="service-symbol">◉</div>
+      <h3>Media Coverage</h3>
+      <p>Capturing moments and sharing stories through event coverage, interviews, features and digital content.</p>
+      <a href="#contact">Cover your story ↗</a><div class="service-watermark">MEDIA</div>
+    </article>
+  </div>
+</section>
 
-      <article class="card" data-cat="shoes" data-name="Cloudstep Low" data-price="40">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Cloudstep%20Low%20white%20leather%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/shoe_cloudstep_low.png" alt="Cloudstep Low white leather sneakers" loading="lazy" width="928" height="1152">
-          <span class="card__badge">Best seller</span>
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Cloudstep Low</h3><span class="card__price">$40</span></div>
-          <p class="card__meta">White leather sneakers · Unisex · Sizes 38–46</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Cloudstep%20Low%20white%20leather%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="shoes" data-name="Retro Runner" data-price="65">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Retro%20Runner%20suede%20sneakers%20listed%20for%20%2465." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/shoe_retro_runner.png" alt="Retro Runner sand and rust suede sneakers" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Retro Runner</h3><span class="card__price">$65</span></div>
-          <p class="card__meta">Sand &amp; rust suede · Unisex · Sizes 38–46</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Retro%20Runner%20suede%20sneakers%20listed%20for%20%2465." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="shoes" data-name="Chelsea Boot" data-price="95">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Chelsea%20Boot%20in%20black%20leather%20listed%20for%20%2495." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/shoe_chelsea_boot.png" alt="Chelsea Boot in black leather" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Chelsea Boot</h3><span class="card__price">$95</span></div>
-          <p class="card__meta">Black leather · Full grain · Sizes 39–46</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Chelsea%20Boot%20in%20black%20leather%20listed%20for%20%2495." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="shoes" data-name="Platform 90" data-price="78">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Platform%2090%20chunky%20sneakers%20listed%20for%20%2478." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/shoe_platform_90.png" alt="Platform 90 off-white chunky sneakers" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Platform 90</h3><span class="card__price">$78</span></div>
-          <p class="card__meta">Off-white chunky sole · Unisex · Sizes 38–45</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Platform%2090%20chunky%20sneakers%20listed%20for%20%2478." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="shoes" data-name="Penny Loafer" data-price="72">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Penny%20Loafer%20in%20tan%20suede%20listed%20for%20%2472." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/shoe_penny_loafer.png" alt="Penny Loafer in tan suede" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Penny Loafer</h3><span class="card__price">$72</span></div>
-          <p class="card__meta">Tan suede · Leather sole · Sizes 39–46</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Penny%20Loafer%20in%20tan%20suede%20listed%20for%20%2472." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="shoes" data-name="Court High" data-price="85">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Court%20High%20sneakers%20listed%20for%20%2485." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/shoe_court_high.png" alt="Court High black and cream high-top sneakers" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Court High</h3><span class="card__price">$85</span></div>
-          <p class="card__meta">Black &amp; cream high-top · Unisex · Sizes 38–46</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Court%20High%20sneakers%20listed%20for%20%2485." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="shoes" data-name="New Balance Sneakers" data-price="40">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20New%20Balance%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/shoe_new_balance_1.jpg" alt="New Balance sneakers, product view one" loading="lazy" width="1170" height="862">
-          <span class="card__badge">Featured deal</span>
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>New Balance Sneakers</h3><span class="card__price">$40</span></div>
-          <p class="card__meta">Everyday runner · Unisex · Sizes 38–46</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20New%20Balance%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="outfits" data-name="Washed Denim Jacket Set" data-price="58">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Washed%20Denim%20Jacket%20Set%20listed%20for%20%2458." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/outfit_denim_jacket.png" alt="Model wearing an oversized washed denim jacket with wide-leg trousers" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Washed Denim Jacket Set</h3><span class="card__price">$58</span></div>
-          <p class="card__meta">Oversized jacket + wide-leg trouser · S–XL</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Washed%20Denim%20Jacket%20Set%20listed%20for%20%2458." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="outfits" data-name="Charcoal Wool Overcoat" data-price="140">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Charcoal%20Wool%20Overcoat%20listed%20for%20%24140." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/outfit_wool_overcoat.png" alt="Model wearing a long tailored charcoal wool overcoat" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Charcoal Wool Overcoat</h3><span class="card__price">$140</span></div>
-          <p class="card__meta">Tailored longline wool blend · S–XL</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Charcoal%20Wool%20Overcoat%20listed%20for%20%24140." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="outfits" data-name="Heavyweight Hoodie & Cargo Set" data-price="68">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Heavyweight%20Hoodie%20and%20Cargo%20Set%20listed%20for%20%2468." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/outfit_hoodie_cargo.png" alt="Model wearing a heavyweight streetwear hoodie with cargo pants" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Heavyweight Hoodie &amp; Cargo Set</h3><span class="card__price">$68</span></div>
-          <p class="card__meta">400gsm hoodie + cargo pant · S–XXL</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Heavyweight%20Hoodie%20and%20Cargo%20Set%20listed%20for%20%2468." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="outfits" data-name="Leather Biker Jacket" data-price="120">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Leather%20Biker%20Jacket%20listed%20for%20%24120." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/outfit_biker_jacket.png" alt="Model wearing a black leather biker jacket with slim trousers" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Leather Biker Jacket</h3><span class="card__price">$120</span></div>
-          <p class="card__meta">Black leather, slim cut · S–XL</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Leather%20Biker%20Jacket%20listed%20for%20%24120." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
-      <article class="card" data-cat="outfits" data-name="Emerald Slip Dress" data-price="88">
-        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Emerald%20Slip%20Dress%20listed%20for%20%2488." target="_blank" rel="noopener" data-cursor="Order">
-          <img src="images/outfit_slip_dress.png" alt="Model wearing a flowing silk slip dress in deep emerald" loading="lazy" width="928" height="1152">
-        </a>
-        <div class="card__body">
-          <div class="card__row"><h3>Emerald Slip Dress</h3><span class="card__price">$88</span></div>
-          <p class="card__meta">Flowing silk-touch slip · XS–L</p>
-          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Emerald%20Slip%20Dress%20listed%20for%20%2488." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
-        </div>
-      </article>
-
+<section class="shop section" id="shop">
+  <div class="section-heading">
+    <div><div class="section-kicker">FEATURED PRODUCT / OCEAN SHOP</div><h2>Fresh kicks.<br><em>Great value.</em></h2></div>
+    <p>Shop featured finds from Ocean Group. Message us on WhatsApp to order or ask a question.</p>
+  </div>
+  <article class="product-card">
+    <div class="product-gallery">
+      <img src="assets/new-balance-shoes-1.jpeg" alt="New Balance sneakers, product view one">
+      <img src="assets/new-balance-shoes-2.jpeg" alt="New Balance sneakers, product view two">
     </div>
-    <p class="grid__empty" id="gridEmpty" hidden>Nothing in this category yet.</p>
-  </section>
+    <div class="product-info">
+      <span class="product-tag">FEATURED DEAL</span>
+      <h3>New Balance Sneakers</h3>
+      <p class="product-description">Step out in style with these New Balance sneakers. A fresh everyday look at a great price.</p>
+      <div class="product-price">$40 <span>USD</span></div>
+      <p class="product-seller">Sold by <strong>Ocean Group</strong></p>
+      <a class="button button-primary product-buy" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20New%20Balance%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener">Order on WhatsApp ↗</a>
+      <small class="product-note">Tap to message Ocean Group about availability and delivery.</small>
+    </div>
+  </article>
+</section>
 
-  <!-- ============ LOOKBOOK ============ -->
-  <section class="lookbook" id="lookbook">
-    <div class="section-head section-head--wide">
-      <div>
-        <span class="kicker">02 / Lookbook</span>
-        <h2 class="display">Shot in <em>low light.</em></h2>
-      </div>
-      <p class="section-note">A quiet, high-contrast look at the pieces — styled the way we would wear them.</p>
-    </div>
-    <div class="lookbook__grid">
-      <figure class="look look--tall" data-cursor="View">
-        <img src="images/outfit_wool_overcoat.png" alt="Charcoal wool overcoat look" loading="lazy" width="928" height="1152">
-        <figcaption><span>Look 01</span><strong>Charcoal Overcoat</strong><em>$140</em></figcaption>
-      </figure>
-      <figure class="look" data-cursor="View">
-        <img src="images/shoe_chelsea_boot.png" alt="Black leather chelsea boot look" loading="lazy" width="928" height="1152">
-        <figcaption><span>Look 02</span><strong>Chelsea Boot</strong><em>$95</em></figcaption>
-      </figure>
-      <figure class="look" data-cursor="View">
-        <img src="images/outfit_hoodie_cargo.png" alt="Heavyweight hoodie and cargo look" loading="lazy" width="928" height="1152">
-        <figcaption><span>Look 03</span><strong>Hoodie &amp; Cargo</strong><em>$68</em></figcaption>
-      </figure>
-      <figure class="look look--wide" data-cursor="View">
-        <img src="images/outfit_slip_dress.png" alt="Emerald slip dress look" loading="lazy" width="928" height="1152">
-        <figcaption><span>Look 04</span><strong>Emerald Slip Dress</strong><em>$88</em></figcaption>
-      </figure>
-      <figure class="look" data-cursor="View">
-        <img src="images/shoe_retro_runner.png" alt="Retro runner suede sneaker look" loading="lazy" width="928" height="1152">
-        <figcaption><span>Look 05</span><strong>Retro Runner</strong><em>$65</em></figcaption>
-      </figure>
-      <figure class="look" data-cursor="View">
-        <img src="images/outfit_biker_jacket.png" alt="Leather biker jacket look" loading="lazy" width="928" height="1152">
-        <figcaption><span>Look 06</span><strong>Leather Biker</strong><em>$120</em></figcaption>
-      </figure>
-    </div>
-  </section>
+<section class="updates section" id="updates">
+  <div class="section-heading">
+    <div><div class="section-kicker">03 / THE LATEST</div><h2>Ocean <em>updates.</em></h2></div>
+    <p>Announcements, activities and stories from our growing community.</p>
+  </div>
+  <div class="updates-toolbar">
+    <span id="updateCount">LATEST FROM OCEAN</span>
+    <button class="text-button" id="openAdmin">＋ Add an update</button>
+  </div>
+  <div class="updates-grid" id="updatesGrid">
+    <article class="update-card featured">
+      <div class="update-art art-wave"><span>OCEAN / JOURNAL</span><b>Make waves.<br>Make meaning.</b><i>〰</i></div>
+      <div class="update-meta"><span>WELCOME</span><span>OCEAN TEAM</span></div>
+      <h3>A new space for trade, entertainment and stories</h3>
+      <p>Welcome to OCEAN. Follow this space for announcements, coverage and opportunities as we grow.</p>
+    </article>
+    <article class="update-card">
+      <div class="update-art art-sun"><span>COMMUNITY</span><b>People first.<br>Always.</b><i>✳</i></div>
+      <div class="update-meta"><span>OUR VALUES</span><span>COMMUNITY</span></div>
+      <h3>Connection is at the heart of what we do</h3>
+      <p>We want to build lasting relationships with creatives, businesses, organisations and communities.</p>
+    </article>
+    <article class="update-card">
+      <div class="update-art art-deep"><span>LET'S COLLABORATE</span><b>Your story<br>belongs here.</b><i>↗</i></div>
+      <div class="update-meta"><span>OPEN INVITATION</span><span>PARTNERSHIPS</span></div>
+      <h3>Have an idea or event to share?</h3>
+      <p>Reach out to discuss coverage, promotion, partnerships or a project you have in mind.</p>
+    </article>
+  </div>
+  <p class="local-note" id="localNote">The local editor saves on this device only. To publish updates for all visitors, use the included publishing workflow in the README.</p>
+</section>
 
-  <!-- ============ STUDIO / ABOUT ============ -->
-  <section class="studio" id="studio">
-    <div class="section-head">
-      <div>
-        <span class="kicker">03 / The Studio</span>
-        <h2 class="display">More than a shop.<br><em>A current of possibility.</em></h2>
-      </div>
-      <p class="section-note">OCEAN is a growing platform working across trade, entertainment and media coverage. We build relationships, spotlight talent and help good ideas reach the people who need them.</p>
-    </div>
+<section class="city-stories section" id="city-stories">
+  <div class="section-heading">
+    <div><div class="section-kicker">04 / OCEAN CITY STORIES</div><h2>Four cities.<br><em>Countless stories.</em></h2></div>
+    <p>Explore short city films from Juba, Kigali, Kampala and Nairobi. Each video is embedded from its original publisher.</p>
+  </div>
+  <div class="city-video-grid">
+    <article class="city-video-card">
+      <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/caQwprzmHAM?rel=0" title="Juba, South Sudan — city streets and daily life" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div class="city-video-meta"><span>🇸🇸 SOUTH SUDAN</span><span>01 / 04</span></div>
+      <h3>Juba, South Sudan</h3><p>A street-level look at Airport Road, local businesses and everyday city life.</p>
+      <a href="https://www.youtube.com/watch?v=caQwprzmHAM" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+    </article>
+    <article class="city-video-card">
+      <div class="video-frame"><iframe src="https://player.vimeo.com/video/1144488408?title=0&byline=0&portrait=0" title="Kigali in one minute — city showcase film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div class="city-video-meta"><span>🇷🇼 RWANDA</span><span>02 / 04</span></div>
+      <h3>Kigali, Rwanda</h3><p>A one-minute showcase of Kigali’s character, scenery and hidden gems.</p>
+      <a href="https://vimeo.com/1144488408" target="_blank" rel="noopener">Watch on Vimeo ↗</a>
+    </article>
+    <article class="city-video-card">
+      <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/qB4zVwGiFRg?rel=0" title="Kampala is leveling up — Uganda city feature" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div class="city-video-meta"><span>🇺🇬 UGANDA</span><span>03 / 04</span></div>
+      <h3>Kampala, Uganda</h3><p>A look at Kampala’s changing streets, infrastructure and urban energy.</p>
+      <a href="https://zolotube.com/watch?v=qB4zVwGiFRg" target="_blank" rel="noopener">Watch original video ↗</a>
+    </article>
+    <article class="city-video-card">
+      <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/d_6MgZIHSQQ?rel=0" title="Nairobi, Kenya — city transformation feature" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <div class="city-video-meta"><span>🇰🇪 KENYA</span><span>04 / 04</span></div>
+      <h3>Nairobi, Kenya</h3><p>See recent changes to Nairobi’s streets, public spaces and city centre.</p>
+      <a href="https://invidious.thehtmlproject.com/watch?v=d_6MgZIHSQQ" target="_blank" rel="noopener">Watch original video ↗</a>
+    </article>
+  </div>
+  <p class="media-credit">Video content remains the property of its respective creators and publishers. OCEAN embeds the original players and does not claim ownership.</p>
+</section>
 
-    <div class="studio__grid">
-      <article class="pillar">
-        <span class="pillar__num">01</span>
-        <h3>Trade &amp; Business</h3>
-        <p>Building connections, promoting opportunities and supporting business visibility through clear communication and collaboration.</p>
-        <a href="#contact">Discuss a project <span>↗</span></a>
-      </article>
-      <article class="pillar">
-        <span class="pillar__num">02</span>
-        <h3>Entertainment</h3>
-        <p>Celebrating talent, events and culture with creative promotion that helps people discover what is happening.</p>
-        <a href="#contact">Promote an event <span>↗</span></a>
-      </article>
-      <article class="pillar">
-        <span class="pillar__num">03</span>
-        <h3>Media Coverage</h3>
-        <p>Capturing moments and sharing stories through event coverage, interviews, features and digital content.</p>
-        <a href="#contact">Cover your story <span>↗</span></a>
-      </article>
-    </div>
+<section class="artist-news section" id="artist-news">
+  <div class="section-heading">
+    <div><div class="section-kicker">05 / GLOBAL ENTERTAINMENT DESK</div><h2>Artists making<br><em>headlines.</em></h2></div>
+    <p>Selected international music and entertainment headlines. Follow the source links for full reports and updates.</p>
+  </div>
+  <div class="artist-news-grid">
+    <article class="artist-news-card">
+      <div class="news-topline"><span>LIVE MUSIC</span><time datetime="2026-11-13">13 NOV 2026</time></div>
+      <h3>Lionel Richie returns to the stage after heart procedure</h3>
+      <p>The singer returned to his Las Vegas residency on November 11, telling the audience he was back and thanking fans for their support.</p>
+      <a href="https://ew.com/lionel-richie-returns-to-stage-after-undergoing-heart-procedure-12250848" target="_blank" rel="noopener">Read report ↗</a>
+    </article>
+    <article class="artist-news-card">
+      <div class="news-topline"><span>ARTIST NEWS</span><time datetime="2026-11-13">13 NOV 2026</time></div>
+      <h3>Roger Taylor steps away from Duran Duran</h3>
+      <p>The drummer has announced his departure from the band, citing worsening tinnitus. His bandmates have shared their support.</p>
+      <a href="https://www.thetimes.com/culture/music/article/roger-taylor-quits-duran-duran-tinnitus-5n8qp2nk2" target="_blank" rel="noopener">Read report ↗</a>
+    </article>
+    <article class="artist-news-card">
+      <div class="news-topline"><span>GLOBAL MUSIC</span><time datetime="2026-11-11">11 NOV 2026</time></div>
+      <h3>Olivia Dean named Apple Music Artist of the Year 2026</h3>
+      <p>The recognition highlights the singer’s strong streaming performance and the reach of her album, <em>The Art of Loving</em>.</p>
+      <a href="https://kazimagazine.com/news/olivia-dean-apple-music-artist-of-the-year-2026" target="_blank" rel="noopener">Read report ↗</a>
+    </article>
+    <article class="artist-news-card">
+      <div class="news-topline"><span>NEW RELEASES</span><time datetime="2026-11-09">09 NOV 2026</time></div>
+      <h3>Lil Baby releases new album <em>Fresh</em></h3>
+      <p>The rapper’s new project features Young Thug, Future and Rylo Rodriguez, according to the release report.</p>
+      <a href="https://www.rttnews.com/3711933/lil-baby-drops-new-album-fresh-featuring-young-thug-future-rylo-rodriguez.aspx?type=all" target="_blank" rel="noopener">Read report ↗</a>
+    </article>
+  </div>
+  <p class="media-credit">News summaries are editorial selections, not original reporting by OCEAN. Headlines and details may change; source publishers retain ownership.</p>
+</section>
 
-    <div class="values">
-      <div><span>01</span><strong>Connection</strong><small>Bringing people and ideas together.</small></div>
-      <div><span>02</span><strong>Creativity</strong><small>Making room for fresh perspectives.</small></div>
-      <div><span>03</span><strong>Integrity</strong><small>Working with care and accountability.</small></div>
+<section class="ceo-section section" id="leadership">
+  <div class="section-kicker">06 / A MESSAGE FROM OUR CEO</div>
+  <div class="ceo-grid">
+    <div class="ceo-photo-wrap">
+      <div class="photo-frame"></div>
+      <img src="assets/ceo-bol-kuer-lueth.jpg" alt="Portrait of OCEAN CEO Bol Kuer Lueth" class="ceo-photo">
+      <div class="photo-label">LEADERSHIP / OCEAN</div>
     </div>
+    <div class="ceo-message">
+      <div class="quote-mark">“</div>
+      <h2>A warm welcome<br>to the world of <em>OCEAN.</em></h2>
+      <p>Dear friends, partners and visitors,</p>
+      <p>It is my pleasure to welcome you to OCEAN. We are building a platform where trade, entertainment and media coverage can work together to create meaningful connections and open new doors.</p>
+      <p>Our ambition is to spotlight talent, share stories that matter, support business opportunities and celebrate the creativity within our communities. We know that lasting progress takes trust, teamwork and a willingness to keep learning.</p>
+      <p>Thank you for visiting and for being part of this journey. I invite you to connect with us, share your ideas and grow with OCEAN. The best chapters are the ones we create together.</p>
+      <div class="signature"><strong>Bol Kuer Lueth</strong><span>Chief Executive Officer · OCEAN</span></div>
+    </div>
+  </div>
+</section>
 
-    <div class="ceo">
-      <div class="ceo__photo">
-        <img src="images/ceo_bol_kuer_lueth.jpg" alt="Portrait of OCEAN CEO Bol Kuer Lueth" loading="lazy" width="1098" height="1433">
-        <span class="ceo__label">Leadership / OCEAN</span>
-      </div>
-      <div class="ceo__message">
-        <span class="kicker">04 / A message from our CEO</span>
-        <h3 class="display display--sm">A warm welcome to the world of <em>OCEAN.</em></h3>
-        <p>Dear friends, partners and visitors,</p>
-        <p>It is my pleasure to welcome you to OCEAN. We are building a platform where trade, entertainment and media coverage can work together to create meaningful connections and open new doors.</p>
-        <p>Our ambition is to spotlight talent, share stories that matter, support business opportunities and celebrate the creativity within our communities. We know that lasting progress takes trust, teamwork and a willingness to keep learning.</p>
-        <p>Thank you for visiting and for being part of this journey. I invite you to connect with us, share your ideas and grow with OCEAN. The best chapters are the ones we create together.</p>
-        <div class="ceo__sign"><strong>Bol Kuer Lueth</strong><span>Chief Executive Officer · OCEAN</span></div>
-      </div>
+<section class="contact section" id="contact">
+  <div class="contact-glow"></div>
+  <div class="section-kicker">07 / START A CONVERSATION</div>
+  <div class="contact-grid">
+    <div>
+      <h2>Have a story,<br>idea or <em>opportunity?</em></h2>
+      <p>We would love to hear from you. Let’s make something meaningful together.</p>
     </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="contact" id="contact">
-    <span class="kicker">05 / Start a conversation</span>
-    <h2 class="contact__title" data-split>SAY HELLO</h2>
-    <p class="contact__lede">we look forward<br>to hearing from you</p>
-    <div class="contact__links">
-      <a href="mailto:Ocean2026@gmail.com" data-cursor="Email"><span>New business</span><strong>Ocean2026@gmail.com</strong><b>↗</b></a>
-      <a href="https://wa.me/211921329132?text=Hello%20OCEAN%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener" data-cursor="WhatsApp"><span>General &amp; orders</span><strong>+211 921 329 132</strong><b>↗</b></a>
+    <div class="contact-details">
+      <a href="mailto:Ocean2026@gmail.com">
+        <span class="contact-icon">✉</span>
+        <span><small>EMAIL US</small><strong>Ocean2026@gmail.com</strong></span><b>↗</b>
+      </a>
+      <a href="https://wa.me/211921329132" target="_blank" rel="noopener">
+        <span class="contact-icon">◉</span>
+        <span><small>WHATSAPP</small><strong>+211 921 329 132</strong></span><b>↗</b>
+      </a>
+      <a href="https://wa.me/211921329132?text=Hello%20OCEAN%2C%20I%27d%20like%20to%20make%20an%20inquiry." class="button button-primary whatsapp-cta" target="_blank" rel="noopener">Message us on WhatsApp ↗</a>
     </div>
-    <a class="btn btn--fill contact__cta" href="https://wa.me/211921329132?text=Hello%20OCEAN%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener"><span>Message us on WhatsApp</span></a>
-  </section>
+  </div>
+</section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="footer__row">
-    <span class="footer__brand">OCEAN<sup>®</sup></span>
-    <span>Trade · Entertainment · Media Coverage</span>
-    <span>Juba · Kigali · Worldwide</span>
-    <span>© <span id="year">2026</span> OCEAN. All rights reserved.</span>
-  </div>
-  <a class="footer__top" href="#top">Back to top ↑</a>
+<footer>
+  <a class="footer-brand" href="#home"><img src="assets/ocean-logo.png" alt=""><span>OCEAN</span></a>
+  <span>Trade · Entertainment · Media Coverage</span>
+  <span>© <span id="year"></span> OCEAN. All rights reserved.</span>
+  <a href="#home">Back to top ↑</a>
 </footer>
 
-<audio id="ambient" src="audio/ambient.mp3" loop preload="none"></audio>
+<a class="floating-whatsapp" href="https://wa.me/211921329132" target="_blank" rel="noopener" aria-label="Chat with OCEAN on WhatsApp">
+  <span class="wa-mark">◉</span><span>Chat with us</span>
+</a>
+
+<dialog id="adminDialog" class="admin-dialog">
+  <form method="dialog" class="dialog-top">
+    <div><div class="section-kicker">OCEAN DASHBOARD</div><h2>Manage updates</h2></div>
+    <button class="close-dialog" aria-label="Close">×</button>
+  </form>
+  <div class="admin-content">
+    <p class="admin-help">Add a news item or announcement. This demo saves updates in this browser only; see README for publishing options.</p>
+    <form id="updateForm" class="update-form">
+      <label>Headline<input name="title" required maxlength="100" placeholder="What’s new at OCEAN?"></label>
+      <label>Category
+        <select name="category">
+          <option>Announcement</option>
+          <option>Trade & Business</option>
+          <option>Entertainment</option>
+          <option>Media Coverage</option>
+          <option>Community</option>
+        </select>
+      </label>
+      <label>Short description<textarea name="description" required maxlength="400" rows="3" placeholder="Share the key details…"></textarea></label>
+      <label>Image URL (optional)<input name="image" type="url" placeholder="https://example.com/image.jpg"></label>
+      <div class="form-actions">
+        <button type="submit" class="button button-primary">Publish update ↗</button>
+        <button type="button" class="button button-light" id="exportUpdates">Export updates</button>
+        <label class="import-label button button-light">Import updates<input type="file" id="importFile" accept="application/json" hidden></label>
+      </div>
+    </form>
+    <div class="admin-list-heading">
+      <strong>Saved updates</strong>
+      <button id="clearUpdates" class="text-button danger">Clear added updates</button>
+    </div>
+    <div id="adminList" class="admin-list"></div>
+  </div>
+</dialog>
 
 <script src="script.js"></script>
 </body>
