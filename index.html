@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#040404">
+<meta name="description" content="OCEAN — a shop and studio for shoes, fashion outfits and stories. Editorial footwear and apparel, priced and ready to order.">
+<title>OCEAN® — Shoes, Outfits & Stories</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Archivo+Expanded:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <div class="loader__box" id="loaderBox">
+      <span>O</span><span>C</span><span>E</span><span>A</span><span>N</span>
+    </div>
+    <div class="loader__meta">
+      <span class="loader__title">OCEAN<sup>®</sup></span>
+      <p class="loader__tagline">A shop and studio for shoes, outfits<br>and the stories that move with them.</p>
+    </div>
+    <div class="loader__actions">
+      <button class="btn btn--fill" id="enterAudio" type="button"><span>Enter</span></button>
+      <button class="btn btn--ghost" id="enterSilent" type="button"><span>Enter without audio</span></button>
+    </div>
+  </div>
+  <div class="loader__bar"><i id="loaderBar"></i></div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#top" aria-label="OCEAN home">
+    <span class="brand__mark">OCEAN<sup>®</sup></span>
+  </a>
+  <nav class="site-nav" id="siteNav" aria-label="Primary">
+    <a href="#shop" data-cursor="Shop">Shop</a>
+    <a href="#lookbook" data-cursor="Lookbook">Lookbook</a>
+    <a href="#studio" data-cursor="Studio">Studio</a>
+    <a href="#contact" data-cursor="Contact">Contact</a>
+  </nav>
+  <div class="header-tools">
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" aria-label="Toggle ambient sound">
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="sound-label" id="soundLabel">Sound off</span>
+    </button>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-label="Open menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__grain" aria-hidden="true"></div>
+    <div class="hero__top">
+      <span class="eyebrow">Est. 2026 — Juba / Kigali / Worldwide</span>
+      <span class="eyebrow eyebrow--right">Shoes · Outfits · Stories</span>
+    </div>
+    <h1 class="hero__title" aria-label="OCEAN">
+      <span class="hero__word" data-split>OCEAN</span>
+    </h1>
+    <div class="hero__bottom">
+      <p class="hero__lede">Editorial footwear and apparel, priced plainly and ready to order. A shop and studio built on trade, culture and coverage.</p>
+      <div class="hero__cta">
+        <a class="btn btn--fill" href="#shop" data-cursor="Browse"><span>Shop the drop</span></a>
+        <a class="btn btn--ghost" href="#studio" data-cursor="Studio"><span>Our studio</span></a>
+      </div>
+    </div>
+    <div class="hero__scroll"><span>Scroll</span><i></i></div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Fresh kicks</span><em>✳</em><span>Great value</span><em>✳</em><span>Editorial outfits</span><em>✳</em><span>Order on WhatsApp</span><em>✳</em>
+      <span>Fresh kicks</span><em>✳</em><span>Great value</span><em>✳</em><span>Editorial outfits</span><em>✳</em><span>Order on WhatsApp</span><em>✳</em>
+    </div>
+  </div>
+
+  <!-- ============ SHOP ============ -->
+  <section class="shop" id="shop">
+    <div class="section-head">
+      <div>
+        <span class="kicker">01 / The Shop</span>
+        <h2 class="display">Shoes &amp; <em>outfits.</em></h2>
+      </div>
+      <p class="section-note">Every piece is priced in USD. Tap any item to message Ocean Group on WhatsApp about sizing, availability and delivery.</p>
+    </div>
+
+    <div class="filters" id="filters" role="tablist" aria-label="Filter products">
+      <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All <span>12</span></button>
+      <button class="filter" data-filter="shoes" role="tab" aria-selected="false">Shoes <span>7</span></button>
+      <button class="filter" data-filter="outfits" role="tab" aria-selected="false">Outfits <span>5</span></button>
+    </div>
+
+    <div class="grid" id="grid">
+
+      <article class="card" data-cat="shoes" data-name="Cloudstep Low" data-price="40">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Cloudstep%20Low%20white%20leather%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/shoe_cloudstep_low.png" alt="Cloudstep Low white leather sneakers" loading="lazy" width="928" height="1152">
+          <span class="card__badge">Best seller</span>
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Cloudstep Low</h3><span class="card__price">$40</span></div>
+          <p class="card__meta">White leather sneakers · Unisex · Sizes 38–46</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Cloudstep%20Low%20white%20leather%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="shoes" data-name="Retro Runner" data-price="65">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Retro%20Runner%20suede%20sneakers%20listed%20for%20%2465." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/shoe_retro_runner.png" alt="Retro Runner sand and rust suede sneakers" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Retro Runner</h3><span class="card__price">$65</span></div>
+          <p class="card__meta">Sand &amp; rust suede · Unisex · Sizes 38–46</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Retro%20Runner%20suede%20sneakers%20listed%20for%20%2465." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="shoes" data-name="Chelsea Boot" data-price="95">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Chelsea%20Boot%20in%20black%20leather%20listed%20for%20%2495." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/shoe_chelsea_boot.png" alt="Chelsea Boot in black leather" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Chelsea Boot</h3><span class="card__price">$95</span></div>
+          <p class="card__meta">Black leather · Full grain · Sizes 39–46</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Chelsea%20Boot%20in%20black%20leather%20listed%20for%20%2495." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="shoes" data-name="Platform 90" data-price="78">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Platform%2090%20chunky%20sneakers%20listed%20for%20%2478." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/shoe_platform_90.png" alt="Platform 90 off-white chunky sneakers" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Platform 90</h3><span class="card__price">$78</span></div>
+          <p class="card__meta">Off-white chunky sole · Unisex · Sizes 38–45</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Platform%2090%20chunky%20sneakers%20listed%20for%20%2478." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="shoes" data-name="Penny Loafer" data-price="72">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Penny%20Loafer%20in%20tan%20suede%20listed%20for%20%2472." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/shoe_penny_loafer.png" alt="Penny Loafer in tan suede" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Penny Loafer</h3><span class="card__price">$72</span></div>
+          <p class="card__meta">Tan suede · Leather sole · Sizes 39–46</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Penny%20Loafer%20in%20tan%20suede%20listed%20for%20%2472." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="shoes" data-name="Court High" data-price="85">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Court%20High%20sneakers%20listed%20for%20%2485." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/shoe_court_high.png" alt="Court High black and cream high-top sneakers" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Court High</h3><span class="card__price">$85</span></div>
+          <p class="card__meta">Black &amp; cream high-top · Unisex · Sizes 38–46</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Court%20High%20sneakers%20listed%20for%20%2485." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="shoes" data-name="New Balance Sneakers" data-price="40">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20New%20Balance%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/shoe_new_balance_1.jpg" alt="New Balance sneakers, product view one" loading="lazy" width="1170" height="862">
+          <span class="card__badge">Featured deal</span>
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>New Balance Sneakers</h3><span class="card__price">$40</span></div>
+          <p class="card__meta">Everyday runner · Unisex · Sizes 38–46</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20New%20Balance%20sneakers%20listed%20for%20%2440." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="outfits" data-name="Washed Denim Jacket Set" data-price="58">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Washed%20Denim%20Jacket%20Set%20listed%20for%20%2458." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/outfit_denim_jacket.png" alt="Model wearing an oversized washed denim jacket with wide-leg trousers" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Washed Denim Jacket Set</h3><span class="card__price">$58</span></div>
+          <p class="card__meta">Oversized jacket + wide-leg trouser · S–XL</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Washed%20Denim%20Jacket%20Set%20listed%20for%20%2458." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="outfits" data-name="Charcoal Wool Overcoat" data-price="140">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Charcoal%20Wool%20Overcoat%20listed%20for%20%24140." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/outfit_wool_overcoat.png" alt="Model wearing a long tailored charcoal wool overcoat" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Charcoal Wool Overcoat</h3><span class="card__price">$140</span></div>
+          <p class="card__meta">Tailored longline wool blend · S–XL</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Charcoal%20Wool%20Overcoat%20listed%20for%20%24140." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="outfits" data-name="Heavyweight Hoodie & Cargo Set" data-price="68">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Heavyweight%20Hoodie%20and%20Cargo%20Set%20listed%20for%20%2468." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/outfit_hoodie_cargo.png" alt="Model wearing a heavyweight streetwear hoodie with cargo pants" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Heavyweight Hoodie &amp; Cargo Set</h3><span class="card__price">$68</span></div>
+          <p class="card__meta">400gsm hoodie + cargo pant · S–XXL</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Heavyweight%20Hoodie%20and%20Cargo%20Set%20listed%20for%20%2468." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="outfits" data-name="Leather Biker Jacket" data-price="120">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Leather%20Biker%20Jacket%20listed%20for%20%24120." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/outfit_biker_jacket.png" alt="Model wearing a black leather biker jacket with slim trousers" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Leather Biker Jacket</h3><span class="card__price">$120</span></div>
+          <p class="card__meta">Black leather, slim cut · S–XL</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Leather%20Biker%20Jacket%20listed%20for%20%24120." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="card" data-cat="outfits" data-name="Emerald Slip Dress" data-price="88">
+        <a class="card__media" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Emerald%20Slip%20Dress%20listed%20for%20%2488." target="_blank" rel="noopener" data-cursor="Order">
+          <img src="images/outfit_slip_dress.png" alt="Model wearing a flowing silk slip dress in deep emerald" loading="lazy" width="928" height="1152">
+        </a>
+        <div class="card__body">
+          <div class="card__row"><h3>Emerald Slip Dress</h3><span class="card__price">$88</span></div>
+          <p class="card__meta">Flowing silk-touch slip · XS–L</p>
+          <a class="card__link" href="https://wa.me/211921329132?text=Hello%20Ocean%20Group%2C%20I%27m%20interested%20in%20the%20Emerald%20Slip%20Dress%20listed%20for%20%2488." target="_blank" rel="noopener">Order on WhatsApp <span>↗</span></a>
+        </div>
+      </article>
+
+    </div>
+    <p class="grid__empty" id="gridEmpty" hidden>Nothing in this category yet.</p>
+  </section>
+
+  <!-- ============ LOOKBOOK ============ -->
+  <section class="lookbook" id="lookbook">
+    <div class="section-head section-head--wide">
+      <div>
+        <span class="kicker">02 / Lookbook</span>
+        <h2 class="display">Shot in <em>low light.</em></h2>
+      </div>
+      <p class="section-note">A quiet, high-contrast look at the pieces — styled the way we would wear them.</p>
+    </div>
+    <div class="lookbook__grid">
+      <figure class="look look--tall" data-cursor="View">
+        <img src="images/outfit_wool_overcoat.png" alt="Charcoal wool overcoat look" loading="lazy" width="928" height="1152">
+        <figcaption><span>Look 01</span><strong>Charcoal Overcoat</strong><em>$140</em></figcaption>
+      </figure>
+      <figure class="look" data-cursor="View">
+        <img src="images/shoe_chelsea_boot.png" alt="Black leather chelsea boot look" loading="lazy" width="928" height="1152">
+        <figcaption><span>Look 02</span><strong>Chelsea Boot</strong><em>$95</em></figcaption>
+      </figure>
+      <figure class="look" data-cursor="View">
+        <img src="images/outfit_hoodie_cargo.png" alt="Heavyweight hoodie and cargo look" loading="lazy" width="928" height="1152">
+        <figcaption><span>Look 03</span><strong>Hoodie &amp; Cargo</strong><em>$68</em></figcaption>
+      </figure>
+      <figure class="look look--wide" data-cursor="View">
+        <img src="images/outfit_slip_dress.png" alt="Emerald slip dress look" loading="lazy" width="928" height="1152">
+        <figcaption><span>Look 04</span><strong>Emerald Slip Dress</strong><em>$88</em></figcaption>
+      </figure>
+      <figure class="look" data-cursor="View">
+        <img src="images/shoe_retro_runner.png" alt="Retro runner suede sneaker look" loading="lazy" width="928" height="1152">
+        <figcaption><span>Look 05</span><strong>Retro Runner</strong><em>$65</em></figcaption>
+      </figure>
+      <figure class="look" data-cursor="View">
+        <img src="images/outfit_biker_jacket.png" alt="Leather biker jacket look" loading="lazy" width="928" height="1152">
+        <figcaption><span>Look 06</span><strong>Leather Biker</strong><em>$120</em></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ STUDIO / ABOUT ============ -->
+  <section class="studio" id="studio">
+    <div class="section-head">
+      <div>
+        <span class="kicker">03 / The Studio</span>
+        <h2 class="display">More than a shop.<br><em>A current of possibility.</em></h2>
+      </div>
+      <p class="section-note">OCEAN is a growing platform working across trade, entertainment and media coverage. We build relationships, spotlight talent and help good ideas reach the people who need them.</p>
+    </div>
+
+    <div class="studio__grid">
+      <article class="pillar">
+        <span class="pillar__num">01</span>
+        <h3>Trade &amp; Business</h3>
+        <p>Building connections, promoting opportunities and supporting business visibility through clear communication and collaboration.</p>
+        <a href="#contact">Discuss a project <span>↗</span></a>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">02</span>
+        <h3>Entertainment</h3>
+        <p>Celebrating talent, events and culture with creative promotion that helps people discover what is happening.</p>
+        <a href="#contact">Promote an event <span>↗</span></a>
+      </article>
+      <article class="pillar">
+        <span class="pillar__num">03</span>
+        <h3>Media Coverage</h3>
+        <p>Capturing moments and sharing stories through event coverage, interviews, features and digital content.</p>
+        <a href="#contact">Cover your story <span>↗</span></a>
+      </article>
+    </div>
+
+    <div class="values">
+      <div><span>01</span><strong>Connection</strong><small>Bringing people and ideas together.</small></div>
+      <div><span>02</span><strong>Creativity</strong><small>Making room for fresh perspectives.</small></div>
+      <div><span>03</span><strong>Integrity</strong><small>Working with care and accountability.</small></div>
+    </div>
+
+    <div class="ceo">
+      <div class="ceo__photo">
+        <img src="images/ceo_bol_kuer_lueth.jpg" alt="Portrait of OCEAN CEO Bol Kuer Lueth" loading="lazy" width="1098" height="1433">
+        <span class="ceo__label">Leadership / OCEAN</span>
+      </div>
+      <div class="ceo__message">
+        <span class="kicker">04 / A message from our CEO</span>
+        <h3 class="display display--sm">A warm welcome to the world of <em>OCEAN.</em></h3>
+        <p>Dear friends, partners and visitors,</p>
+        <p>It is my pleasure to welcome you to OCEAN. We are building a platform where trade, entertainment and media coverage can work together to create meaningful connections and open new doors.</p>
+        <p>Our ambition is to spotlight talent, share stories that matter, support business opportunities and celebrate the creativity within our communities. We know that lasting progress takes trust, teamwork and a willingness to keep learning.</p>
+        <p>Thank you for visiting and for being part of this journey. I invite you to connect with us, share your ideas and grow with OCEAN. The best chapters are the ones we create together.</p>
+        <div class="ceo__sign"><strong>Bol Kuer Lueth</strong><span>Chief Executive Officer · OCEAN</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <span class="kicker">05 / Start a conversation</span>
+    <h2 class="contact__title" data-split>SAY HELLO</h2>
+    <p class="contact__lede">we look forward<br>to hearing from you</p>
+    <div class="contact__links">
+      <a href="mailto:Ocean2026@gmail.com" data-cursor="Email"><span>New business</span><strong>Ocean2026@gmail.com</strong><b>↗</b></a>
+      <a href="https://wa.me/211921329132?text=Hello%20OCEAN%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener" data-cursor="WhatsApp"><span>General &amp; orders</span><strong>+211 921 329 132</strong><b>↗</b></a>
+    </div>
+    <a class="btn btn--fill contact__cta" href="https://wa.me/211921329132?text=Hello%20OCEAN%2C%20I%27d%20like%20to%20make%20an%20inquiry." target="_blank" rel="noopener"><span>Message us on WhatsApp</span></a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer__row">
+    <span class="footer__brand">OCEAN<sup>®</sup></span>
+    <span>Trade · Entertainment · Media Coverage</span>
+    <span>Juba · Kigali · Worldwide</span>
+    <span>© <span id="year">2026</span> OCEAN. All rights reserved.</span>
+  </div>
+  <a class="footer__top" href="#top">Back to top ↑</a>
+</footer>
+
+<audio id="ambient" src="audio/ambient.mp3" loop preload="none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
